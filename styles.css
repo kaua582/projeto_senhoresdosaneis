@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 #titulo_top{
     background-color:#8B6F1E;
     color: white;
@@ -8,10 +9,34 @@
     color: white;
 }
 
-#layout{
-    display: flex;
-}
+
 
 .rodape{
     text-align: center;
+}
+
+body{
+    /*Topografia CSS*/
+    background-color: rgb(0,0,0); /*Cor do fundo*/
+    color: rgb(255,255,255); /*Cor da fonte*/
+    font-family: "Roboto", sans-serif;
+    font-size: 16px; /*Tamanho da fonte - px/em/rem*/
+}
+
+#layout{
+    font-size: 1em; /*Jerda p tamanho do pai dele (body) com um multiplicado*/
+    display: flex;
+    font-style: normal; /*Estilo da fonte: italic - normal - oblique*/ 
+    line-height: 30px; /*Espaçamneto entre linhas*/
+    font-weight: 400; /*Negrito em CSS 100 a 900 bold e bolder*/
+    text-transform: none; /*Capitalização do texto: uppercase - lowercase e capitalize*/
+    text-decoration: none; /*Sublinhado de texto: double - dashed - dotted - wavy - none*/
+    word-spacing: 5px; /*Espaçamentos entre palavras*/
+    letter-spacing: none; /*Espaçamento entre letras*/  
+    text-indent: 20px; /*Espaçamento de paragafro primeira linha*/
+    text-align: justify; /*Alinhamento do texto: left - right - justify e center*/
+}
+
+nav a{
+    text-decoration: none;
 }
