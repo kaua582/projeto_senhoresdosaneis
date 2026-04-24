@@ -10,7 +10,6 @@
 }
 
 
-
 .rodape{
     text-align: center;
 }
@@ -26,6 +25,7 @@ body{
 #layout{
     font-size: 1em; /*Jerda p tamanho do pai dele (body) com um multiplicado*/
     display: flex;
+    flex-direction: column; /*Usado para definir a direção dos elementos que são filhos de um display flex*/
     font-style: normal; /*Estilo da fonte: italic - normal - oblique*/ 
     line-height: 30px; /*Espaçamneto entre linhas*/
     font-weight: 400; /*Negrito em CSS 100 a 900 bold e bolder*/
@@ -35,8 +35,33 @@ body{
     letter-spacing: none; /*Espaçamento entre letras*/  
     text-indent: 20px; /*Espaçamento de paragafro primeira linha*/
     text-align: justify; /*Alinhamento do texto: left - right - justify e center*/
+    /*border-style: dashed; /*Estilo da borda (da div): solid, dashed, dotted, double, groove, ridge, inset, outset
+    border-width: 5px; /*Espessaura da borda
+    border-color: rgb(52, 235, 164); /*Cor da borda*/
+    border: dashed 5px rgb(52, 235, 164); /*Definir estilo, espessura e cor da borda numa mesma linha*/
+    border-top: dotted 10px rebeccapurple;
+    border-left: dotted 20px red;
+    border-bottom: solid 15px #fff000;
+    /*border-right: estilizar lado direito da borda*/
+    border-radius: 50px; /*Arredondar cantos da borda (sup esq = 1, sup dir = 2, inf dir = 3, inf esq = 4)*/
+    margin: 20px; /*Margen do lado de FORA da borda (cima = 1, direita = 2, baixo = 3, esquerda = 4)*/
+    margin-left: 20px; /*Margem a esqueda fora da borda*/
+    margin-right: 20px; /*Margem a direita fora da borda*/
+    margin-bottom: 20px; /*Margem de baixo fora da borda*/
+    margin-top: auto; /*Margem de cima fora da borda*/
+    /*padding: 20px 60px 100px 200px; /*Margem DENTRO da Borda (cima = 1, direita = 2, baixo = 3, esquerda = 4)*/
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 nav a{
     text-decoration: none;
 }
+
+/*.teste_display{
+    background-color: orange;
+    display: inline-block;
+    width: 200px;
+}/*
